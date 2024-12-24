@@ -19,6 +19,11 @@ const studentSchema = new mongoose.Schema(
       required: [true, 'Email is required'],
       unique: true,
     },
+    photo: { 
+      type: String, 
+      default: null 
+    },
+
   },
   {
     timestamps: true,
